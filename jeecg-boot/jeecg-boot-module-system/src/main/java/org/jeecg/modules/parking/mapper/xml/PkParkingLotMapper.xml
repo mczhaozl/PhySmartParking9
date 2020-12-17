@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="org.jeecg.modules.parking.mapper.PkParkingLotMapper">
+	
+	<!-- 查询停车场总车位数及空闲车位总数 -->
+	<select id="getTotalAndFreeNum" resultType="org.jeecg.modules.parking.entity.PkParkingLot">
+		select 
+			sum(total_lot) AS "total_lot",sum(free_lot) AS "free_lot" 
+		FROM 
+			pk_parking_lot
+	</select>
+	
+	<!-- 查询停车场总车位数及空闲车位总数 -->
+	<select id="getFreeLotRank" resultType="org.jeecg.modules.parking.entity.PkParkingLot">
+		SELECT * FROM pk_parking_lot ORDER BY free_lot DESC LIMIT 7
+	</select>
+	
+	
+	
+</mapper>

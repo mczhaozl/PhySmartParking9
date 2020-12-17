@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Delete 7 resources" deleteContents="false" description="Delete 7 resources" element1="/ruoyi" element2="/ruoyi-admin" element3="/ruoyi-common" element4="/ruoyi-framework" element5="/ruoyi-generator" element6="/ruoyi-quartz" element7="/ruoyi-system" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="7" stamp="1604572262035"/>
+</session>
